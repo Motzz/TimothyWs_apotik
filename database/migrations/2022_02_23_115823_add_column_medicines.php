@@ -41,6 +41,7 @@ class AddColumnMedicines extends Migration
             $table->dropColumn('faskes_1')->default(0);
             $table->dropColumn('faskes_2')->default(0);
             $table->dropColumn('faskes_3')->default(0);
+            //
         });
     }
 }
