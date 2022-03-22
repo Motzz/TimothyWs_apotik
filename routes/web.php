@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::resource('medicines', 'MedicineController');
+Route::get('coba1', 'MedicineController@coba1');
+Route::get('coba2', 'CategoryController@coba2');
+Route::resource('categories', 'CategoryController');
+Route::get('report/listmedicine/{id}','CategoryController@showlist');
+Route::post('/medicines/showInfo','MedicineController@showInfo')->name('medicines.showInfo');
+

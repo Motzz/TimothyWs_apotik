@@ -12,7 +12,7 @@ class MedicinesSeeder extends Seeder
     public function run()
     {
         //
-        DB::table('medicines')->insert([
+        /*DB::table('medicines')->insert([
             'medicines_name' => 'fentanil',
             'medicines_price' => 5000,
             'category_id' => 1 ,
@@ -61,6 +61,47 @@ class MedicinesSeeder extends Seeder
             'faskes_1'=>1,
             'faskes_2'=>1,
             'faskes_3'=>1,
+        ]);*/
+          
+        //kategori 2
+        DB::table('medicines')->insert(
+            ['generic_name' => 'alopurinol',
+            'price' => 17500,
+            'category_id'=>5,
+            'form' => 'tab 100 mg',
+            'restriction_formula' =>'30tab/bulan',
+            'description' =>'Tidak diberikan pada saat nyeri akut',
+            'faskes1' => '1',
+            'faskes2' => '1',
+            'faskes3' => '1',
+            
         ]);
+        DB::table('medicines')->insert(
+            ['generic_name' => 'alopurinol',
+            'category_id'=>5,
+             'price' => 17500,
+             'form' => 'tab 300 mg',
+             'restriction_formula' =>'30tab/bulan',
+             'description' =>'Tidak diberikan pada saat nyeri akut',
+             'faskes1' => '1',
+             'faskes2' => '1',
+             'faskes3' => '1',
+            
+        ]);
+        DB::table('medicines')->insert(
+            ['generic_name' => 'kolkisin',
+              'category_id'=>5,
+             'price' => 16500,
+             'form' => 'tab 500 mcg',
+             'restriction_formula' =>'30tab/bulan',
+             'description' =>'Tidak diberikan pada saat nyeri akut',
+             'faskes1' => '1',
+             'faskes2' => '1',
+             'faskes3' => '1',
+            
+        ]);
+
+
+        
     }
 }

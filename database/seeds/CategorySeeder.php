@@ -12,7 +12,7 @@ class CategorySeeder extends Seeder
     public function run()
     {
         //
-         DB::table('categories')->insert([
+         /*DB::table('categories')->insert([
             'category_name' => 'ANALGESIK NARKOTIK',
             'description' => 'Analgesik bersifat narkotik seperti opioid dan opidium bisa menekan sistem saraf pusat dan mengubah persepsi terhadap nyeri (noisepsi). Obat jenis ini lebih kuat dalam mengurangi nyeri dibandingkan OAINS.'
         ]);// bisa berkali kali kalo datanya banyak
@@ -20,6 +20,17 @@ class CategorySeeder extends Seeder
            DB::table('categories')->insert([
             'category_name' => 'ANALGESIK NON NARKOTIK',
             'description' => 'Analgetika perifer (non-narkotik), yang terdiri dari obat-obat yang tidak bersifat narkotik dan tidak bekerja sentral.'
-        ]);// bisa berkali kali kalo datanya banyak
+        ]);// bisa berkali kali kalo datanya <banyak></banyak>*/
+        DB::table('categories')->insert(['name' => 'ANTIPIRAI', 'description'=>'1.3. ANTIPIRAI']);
+        DB::table('categories')->insert(['name' => 'ANESTETIK LOKAL', 'description'=>'2.1 ANESTETIK LOKAL']);
+        DB::table('categories')->insert(['name' => 'ANTIMIGREN', 'description'=>'7.1 ANTIMIGREN']);
+        DB::table('categories')->insert(['name' => 'ANTIVERTIGO', 'description'=>'7.2 ANTIVERTIGO']);
+        DB::table('categories')->insert(['name' => 'IMUNOSUPRESAN', 'description'=>'8.2 IMUNOSUPRESAN']);
+        DB::table('categories')->insert(['name' => 'SITOTOKSIK', 'description'=>'8.3 SITOTOKSIK']);
+        DB::table('categories')->insert(['name' => 'DIURETIK', 'description'=>'15.1 DIURETIK']);
+        DB::table('categories')->insert(['name' => 'OBAT untuk HIPERTROFI PROSTAT', 'description'=>'15.2 OBAT untuk HIPERTROFI PROSTAT']);
+        DB::table('categories')->insert(['name' => 'HORMON ANTIDIURETIK', 'description'=>'16.1 HORMON ANTIDIURETIK']);
+        DB::table('categories')->insert(['name' => 'ANTIDIABETES', 'description'=>'16.2 ANTIDIABETES']);
+        DB::table('categories')->insert(['name' => 'TROMBOLITIK', 'description'=>'17.5 TROMBOLITIK']);
     }
 }
