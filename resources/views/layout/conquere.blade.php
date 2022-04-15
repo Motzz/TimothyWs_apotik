@@ -492,6 +492,12 @@ License: You must have a valid license purchased only from themeforest(the above
 				<span class="title">Medicines</span>
 				</a>
 			</li>
+            <li class="start ">
+				<a href="{{route('transaction.index')}}">
+				<i class="fa fa-slack"></i>
+				<span class="title">transaction</span>
+				</a>
+			</li>
 			
 		</ul>
 		<!-- END SIDEBAR MENU -->

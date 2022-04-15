@@ -13,8 +13,8 @@ class UserSeeder extends Seeder
     {
         //
           DB::table('users')->insert([
-            'name' => Str::random(10),
-            'email' => Str::random(10).'@gmail.com',
+            'name' => "admin",
+            'email' => 'admin@gmail.com',
             'password' => Hash::make('password'),
         ]);// bisa berkali kali kalo datanya banyak
     }
